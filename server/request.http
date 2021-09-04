@@ -1,0 +1,55 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "tloan",
+    "password": "1532000"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "tloan",
+    "password": "1532000"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGYzZTQ2OGM3NDE4NTFjZGM2ODcxNmQiLCJpYXQiOjE2MjY1OTc5OTh9.rp3bsakgtBdlscNf4OKoht1dht6FdkBbf1sOLyFpxwI
+
+{
+    "title": "EiraBridget Fifth Created",
+    "description": "Loan iu ai?",
+    "url": "loanchan.com",
+    "status": "LEARNING"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGYzZTQ2OGM3NDE4NTFjZGM2ODcxNmQiLCJpYXQiOjE2MjY1OTc5OTh9.rp3bsakgtBdlscNf4OKoht1dht6FdkBbf1sOLyFpxwI
+
+###
+PUT http://localhost:5000/api/posts/60f3f152bc64903eb5cedbd4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGYzZTQ2OGM3NDE4NTFjZGM2ODcxNmQiLCJpYXQiOjE2MjY1OTc5OTh9.rp3bsakgtBdlscNf4OKoht1dht6FdkBbf1sOLyFpxwI
+
+{
+    "title": "EiraBridget Fifth Created",
+    "description": "Loan iu ai do?",
+    "url": "loanchan.com",
+    "status": "TO LEARN"
+}
+
+###
+DELETE http://localhost:5000/api/posts/60f3f152bc64903eb5cedbd4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGYzZTQ2OGM3NDE4NTFjZGM2ODcxNmQiLCJpYXQiOjE2MjY1OTc5OTh9.rp3bsakgtBdlscNf4OKoht1dht6FdkBbf1sOLyFpxwI
+
+###
+
+GET http://localhost:5000/api/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGYzZTQ2OGM3NDE4NTFjZGM2ODcxNmQiLCJpYXQiOjE2MjY1OTc5OTh9.rp3bsakgtBdlscNf4OKoht1dht6FdkBbf1sOLyFpxwI
